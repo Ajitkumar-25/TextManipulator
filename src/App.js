@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+import "./App.css";
+import Navbar from "./Components/Navbar";
+// import TextForm from "./Components/TextForm";
+import About from "./Components/About"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar title="TextUtils" aboutText="About TextUtils" />
+
+      {/* yha pe humne ek bhi prop nhi bheja isliye usne deafualt vale use krr liye */}
+
+      {/* <Navbar /> */}
+
+      {/* agr hum kam props bhejenge to to default props se values utha lega  */}
+
+      {/* <Navbar title="TextUtils" /> */}
+
+      <div className="container ">
+        {/* <TextForm heading="Enter Your Text Here"/> */}
+        <About/>
+      </div>
+    </>
   );
 }
 
