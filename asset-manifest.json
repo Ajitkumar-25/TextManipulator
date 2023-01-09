@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/TextManipulator/static/css/main.fe32faeb.css",
+    "main.js": "/TextManipulator/static/js/main.bc3365ed.js",
+    "static/js/787.0edbcda9.chunk.js": "/TextManipulator/static/js/787.0edbcda9.chunk.js",
+    "index.html": "/TextManipulator/index.html",
+    "main.fe32faeb.css.map": "/TextManipulator/static/css/main.fe32faeb.css.map",
+    "main.bc3365ed.js.map": "/TextManipulator/static/js/main.bc3365ed.js.map",
+    "787.0edbcda9.chunk.js.map": "/TextManipulator/static/js/787.0edbcda9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fe32faeb.css",
+    "static/js/main.bc3365ed.js"
+  ]
+}
