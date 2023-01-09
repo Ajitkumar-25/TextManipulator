@@ -3,24 +3,29 @@ import React, { useState } from "react";
 export default function TextForm(props) {
     const handleuppercase=()=>{
         let newtext=text.toLocaleUpperCase();
-        setText(newtext)
+        setText(newtext);
+        props.showAlert(" Converted to Upper case",'success');
     }
     const handlelowercase=()=>{
         let newtext=text.toLocaleLowerCase();
-        setText(newtext)
+        setText(newtext);
+        props.showAlert(" Converted to Lower case",'success');
     }
     const clearText=()=>{
         let newtext="";
         setText(newtext)
+        props.showAlert(" Text was Cleared",'success');
     }
     const handleCopy=()=>{
-        let text=document.getElementById("box");
-        text.Select();
-        navigator.clipboard.writeText(text.value);
+        let txt=document.getElementById("myBox");
+        txt.select();
+        navigator.clipboard.writeText(txt.value);
+        props.showAlert(" Text was Copied",'success');
     }
     const RemoveExtraSpaces=()=>{
         let newtext=text.split(/[ ]+/);
         setText(newtext.join(" "));
+        props.showAlert(" Extra spaces have been removed",'success');
     }
 
     // this function is only made so that we can add new text other wise not possible 
