@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import TextForm from "./Components/TextForm";
@@ -38,16 +37,16 @@ function App() {
     <>
       <Router>
         <Navbar
-          title="TextUtils"
-          aboutText="About TextUtils"
+          title="TextManipulator"
+          aboutText="About "
           mode={mode}
           toggleMode={toggleMode}
         />
         <Alert alert={alert} />
         <div className="container ">
           <Routes>
-            <Route exact path="/about" element={<About />} />
-            <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Enter Your Text Here" mode={mode}
+            <Route exact path="/about" element={<About mode={mode} />} />
+            <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Text Manipulator-Word Count ,Char count, Copy text etc" mode={mode}
                 />
               }
             />

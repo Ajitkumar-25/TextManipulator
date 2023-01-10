@@ -9,7 +9,7 @@ export default function Navbar(props) {
     >
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-          {props.title}
+         <strong>{props.title}</strong> 
         </Link>
         <button
           className="navbar-toggler"
@@ -26,12 +26,12 @@ export default function Navbar(props) {
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <Link className="nav-link active" aria-current="page" to="/">
-                Home
+               <strong>Home</strong> 
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about">
-                {props.aboutText}
+              <Link className="nav-link active" to="/about">
+                <strong>{props.aboutText}</strong>
               </Link>
             </li>
           </ul>
