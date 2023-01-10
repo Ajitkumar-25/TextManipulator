@@ -25,6 +25,10 @@ export default function TextForm(props) {
     setText(newtext.join(" "));
     props.showAlert(" Extra spaces have been removed", "success");
   };
+  const Reversethetext=()=>{
+    let newtext= text.split("").reverse().join("");
+    setText(newtext);
+  }
 
   // this function is only made so that we can add new text other wise not possible
   const handleonchange = (event) => {
@@ -56,38 +60,45 @@ export default function TextForm(props) {
         </div>
         <button
           disabled={text.length === 0}
-          className="btn btn-primary mx-2 my-1"
+          className="btn btn-primary mx-2 my-1 border border-white"
           onClick={handleuppercase}
         >
           Convert To Uppercase
         </button>
         <button
           disabled={text.length === 0}
-          className="btn btn-primary mx-2"
+          className="btn btn-primary mx-2 border border-white"
           onClick={handlelowercase}
         >
           Convert To Lowercase
         </button>
         <button
           disabled={text.length === 0}
-          className="btn btn-primary mx-2"
+          className="btn btn-primary mx-2 border border-white"
           onClick={clearText}
         >
           Clear Text
         </button>
         <button
           disabled={text.length === 0}
-          className="btn btn-primary mx-2"
+          className="btn btn-primary mx-2 border border-white"
           onClick={handleCopy}
         >
           Copy Text
         </button>
         <button
           disabled={text.length === 0}
-          className="btn btn-primary mx-2"
+          className="btn btn-primary mx-2 border border-white"
           onClick={RemoveExtraSpaces}
         >
           Remove Extra Spaces
+        </button>
+        <button
+          disabled={text.length === 0}
+          className="btn btn-primary mx-2 border border-white"
+          onClick={Reversethetext}
+        >
+          Reverse the text
         </button>
       </div>
       <div
